@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TameYourTech from './pages/tameyourtech'
+import TheJoieLab from './pages/thejoielab'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -15,6 +16,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<TameYourTech />} />
+          <Route path="/joielab" element={<TheJoieLab />} />
+
         </Routes>
       </Router>
 
