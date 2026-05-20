@@ -101,7 +101,7 @@ function NavBar() {
       >
         Book Arsh for a Workshop
       </Link>
-      <Link to="/speaker"
+      <Link to="/audit"
         href="#join"
         className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90"
         style={{ backgroundColor: "#3D7267", fontFamily: "DM Sans, sans-serif" }}
