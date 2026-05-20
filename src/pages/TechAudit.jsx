@@ -137,7 +137,7 @@ export default function TechScorecard() {
         {/* ── HERO ── */}
         <section style={{ padding: "72px 24px 80px", maxWidth: 900, margin: "0 auto" }}>
           <div className="fade-in">
-            <span className="pill-tag">Free · 5 Minutes · No Tech Knowledge Required</span>
+            <span className="pill-tag">Free Automation Audit · 5 Minutes · Instant Access</span>
           </div>
           <h1 className="fade-in delay-1" style={{
             fontFamily: "Playfair Display, serif",
@@ -148,17 +148,38 @@ export default function TechScorecard() {
             maxWidth: 720,
             marginBottom: 20
           }}>
-            Is your tech helping your business grow —{" "}
-            <span style={{ color: "#3D7267", fontStyle: "italic" }}>or quietly holding it back?</span>
+            Your automations might be broken —{" "}
+            <span style={{ color: "#3D7267", fontStyle: "italic" }}>and you might not know it yet.</span>
           </h1>
-          <p className="fade-in delay-2" style={{ fontSize: 18, color: "#555", lineHeight: 1.7, maxWidth: 580, marginBottom: 32 }}>
-            Take the free Tech Scorecard to find out exactly where your systems are slowing you down, leaking leads, or wasting hours of your week.
+          <p className="fade-in delay-2" style={{ fontSize: 18, color: "#555", lineHeight: 1.7, maxWidth: 580, marginBottom: 16 }}>
+            The free Automation Audit is a 5-minute self-assessment that shows you exactly where your systems are leaking leads, wasting time, or quietly breaking down between launches.
+          </p>
+          <p className="fade-in delay-2" style={{ fontSize: 15, color: "#888", lineHeight: 1.6, maxWidth: 540, marginBottom: 32 }}>
+            No tech knowledge required. Just honest answers about how your business actually runs — and a clear picture of what to fix first.
           </p>
           <div className="fade-in delay-3" style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" }}>
-            <a href="#survey" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white" }}>
-              Take the Survey Now →
+            <a href="#get-access" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white" }}>
+              Get Free Access →
             </a>
             <span style={{ fontSize: 13, color: "#888" }}>Coaches · Copywriters · Service Providers</span>
+          </div>
+        </section>
+
+        {/* ── PRICE ANCHOR BANNER ── */}
+        <section style={{ backgroundColor: "#3D7267", padding: "18px 24px" }}>
+          <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 16, textAlign: "center" }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+              <span style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: 700, color: "white" }}>Free</span>
+              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", textDecoration: "line-through" }}>$47</span>
+            </div>
+            <div style={{ width: 1, height: 24, backgroundColor: "rgba(255,255,255,0.2)", flexShrink: 0 }} />
+            <p style={{ color: "rgba(255,255,255,0.9)", fontSize: 14, margin: 0, fontFamily: "DM Sans, sans-serif" }}>
+              Use code <strong style={{ backgroundColor: "rgba(255,255,255,0.15)", padding: "2px 10px", borderRadius: 6, letterSpacing: "0.05em" }}>AUTOMATION</strong> at checkout for 100% off
+            </p>
+            <div style={{ width: 1, height: 24, backgroundColor: "rgba(255,255,255,0.2)", flexShrink: 0 }} />
+            <a href="#get-access" style={{ color: "white", fontSize: 13, fontWeight: 700, textDecoration: "none", opacity: 0.9 }}>
+              Claim Now →
+            </a>
           </div>
         </section>
 
@@ -168,20 +189,20 @@ export default function TechScorecard() {
             <div style={{ textAlign: "center", marginBottom: 48 }}>
               <span className="pill-tag" style={{ backgroundColor: "rgba(61,114,103,0.3)", color: "#A8D4CC" }}>Sound Familiar?</span>
               <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)", fontWeight: 700, color: "white", marginBottom: 12 }}>
-                The reality most business owners face
+                The automations you built to save time might be the thing costing you the most.
               </h2>
               <p style={{ color: "#888", fontSize: 16, maxWidth: 520, margin: "0 auto" }}>
-                You started your business to serve clients and grow your income. But instead, your days look like this:
+                You set it up. You assumed it was working. But here's what's actually happening:
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16, marginBottom: 40 }}>
               {[
-                { emoji: "⚙️", text: "Spending hours trying to connect tools that should \"just work\"" },
-                { emoji: "🕳️", text: "Wondering if your leads are slipping through the cracks" },
-                { emoji: "🔁", text: "Rebuilding the same manual processes over and over" },
-                { emoji: "🔥", text: "Losing time to tech troubleshooting instead of growing your business" },
-                { emoji: "🩹", text: "Feeling like your systems are barely holding everything together" },
-                { emoji: "🤷", text: "Knowing automation could help — but not knowing where to start" },
+                { emoji: "📭", text: "New subscribers are opting in but never getting your welcome email — the automation silently broke months ago" },
+                { emoji: "🛒", text: "Someone bought your offer and got… nothing. No receipt, no delivery, no onboarding" },
+                { emoji: "🕳️", text: "Leads are entering your funnel and disappearing — no follow-up, no sequence, no idea where they went" },
+                { emoji: "🔁", text: "You're manually doing things every week that were supposed to be automated by now" },
+                { emoji: "🚨", text: "A launch is coming and you have no idea if your tech will hold" },
+                { emoji: "🤷", text: "You built the system once and haven't checked if it's still working since" },
               ].map((item, i) => (
                 <div key={i} style={{ backgroundColor: "rgba(255,255,255,0.05)", borderRadius: 14, padding: "20px 22px", display: "flex", gap: 12, alignItems: "flex-start" }}>
                   <span style={{ fontSize: 22, flexShrink: 0 }}>{item.emoji}</span>
@@ -191,7 +212,7 @@ export default function TechScorecard() {
             </div>
             <div style={{ textAlign: "center", padding: "24px 32px", backgroundColor: "rgba(61,114,103,0.15)", borderRadius: 16, border: "1px solid rgba(61,114,103,0.3)" }}>
               <p style={{ color: "#A8D4CC", fontSize: 16, fontStyle: "italic", margin: 0 }}>
-                "It's not that you can't figure it out. You just don't want to keep trading your creative energy for endless tech troubleshooting."
+                "Most business owners don't find out their automations are broken until a launch goes sideways, a client doesn't get their onboarding, or a subscriber writes in asking why they never heard back."
               </p>
             </div>
           </div>
@@ -201,27 +222,27 @@ export default function TechScorecard() {
         <section style={{ padding: "72px 24px", backgroundColor: "#F5EDE0" }}>
           <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center" }} className="hero-grid">
             <div>
-              <span className="pill-tag">The Tech Scorecard</span>
+              <span className="pill-tag">The Automation Audit</span>
               <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 16, lineHeight: 1.3 }}>
-                Clarity in 5 minutes. No tech knowledge required.
+                5 minutes to find out what's actually working — and what isn't.
               </h2>
               <p style={{ color: "#555", fontSize: 15, lineHeight: 1.7, marginBottom: 24 }}>
-                The Tech Scorecard is a simple self-assessment designed for entrepreneurs who want their business systems to work for them instead of against them. Just honest answers about how your business currently runs.
+                The Automation Audit is a straight-talking self-assessment for coaches, copywriters, and service providers. No jargon. No complicated tech knowledge required. Just a clear-eyed look at the systems running your business right now — and an honest score that tells you where things stand.
               </p>
-              <a href="#survey" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white", fontSize: 15 }}>
-                Get My Tech Health Score →
+              <a href="#get-access" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white", fontSize: 15 }}>
+                Get Free Access →
               </a>
             </div>
             <div style={{ backgroundColor: "white", borderRadius: 20, padding: 32, border: "1px solid #E8DDD0", boxShadow: "0 4px 24px rgba(0,0,0,0.07)" }}>
               <p style={{ fontFamily: "Playfair Display, serif", fontWeight: 700, fontSize: 16, color: "#1C1C1C", marginBottom: 20 }}>
-                In just a few minutes, you'll discover:
+                In about 5 minutes, you'll know:
               </p>
               {[
-                "Where your tech stack is creating friction",
-                "Which systems are missing or incomplete",
-                "What processes could be automated to save time",
-                "Where your leads, sales, or follow-ups might be breaking",
-                "Your overall Tech Health Score",
+                "Whether your lead capture and welcome sequences are actually firing",
+                "Where your sales and delivery automations have gaps or breaks",
+                "Which manual tasks in your business could (and should) be automated",
+                "How your email deliverability setup is holding up",
+                "Your Automation Health Score — and what it means",
               ].map((item, i) => (
                 <div key={i} className="check-item">
                   <span className="icon">✓</span>
@@ -237,18 +258,18 @@ export default function TechScorecard() {
           <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
             <span className="pill-tag">Who This Is For</span>
             <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 16 }}>
-              If this sounds like you, the scorecard is for you.
+              This audit is for you if:
             </h2>
             <p style={{ color: "#555", fontSize: 15, marginBottom: 36, lineHeight: 1.7 }}>
-              The Tech Scorecard is perfect for coaches, copywriters, and service providers who:
+              The Automation Audit was built for coaches, copywriters, and service providers who:
             </p>
             <div style={{ textAlign: "left", display: "inline-block", maxWidth: 480 }}>
               {[
-                "Feel like their tech is more complicated than it should be",
-                "Are juggling multiple tools that don't talk to each other",
-                "Want more automation and less manual work",
-                "Know their systems could be better but don't know what to fix first",
-                "Are generating revenue but feeling like something is quietly leaking",
+                "Have set up automations before — but aren't 100% sure they're still working",
+                "Are generating consistent revenue and want their backend to finally match",
+                "Have experienced a broken checkout, a missed delivery, or a ghost subscriber",
+                "Know their systems could be tighter but don't know where to start",
+                "Are heading into a launch and want to know their tech won't let them down",
               ].map((item, i) => (
                 <div key={i} className="dot-item">{item}</div>
               ))}
@@ -262,31 +283,36 @@ export default function TechScorecard() {
         </section>
 
         {/* ── THE SURVEY ── */}
-        <section id="survey" style={{ padding: "72px 24px", backgroundColor: "#F5EDE0" }}>
-          <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <div style={{ textAlign: "center", marginBottom: 40 }}>
-              <span className="pill-tag">Take the Survey</span>
-              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 12 }}>
-                Find out your Tech Health Score
-              </h2>
-              <p style={{ color: "#555", fontSize: 15, maxWidth: 480, margin: "0 auto" }}>
-                Takes about 5 minutes. You'll receive your score and next steps by email.
+        <section id="get-access" style={{ padding: "72px 24px", backgroundColor: "#F5EDE0" }}>
+          <div style={{ maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
+            <span className="pill-tag">Get Free Access</span>
+            <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 12 }}>
+              Claim your free Automation Audit
+            </h2>
+            <p style={{ color: "#555", fontSize: 15, maxWidth: 420, margin: "0 auto 32px", lineHeight: 1.7 }}>
+              Click below to claim your free access. You'll receive the audit link instantly by email — takes about 5 minutes to complete.
+            </p>
+            <div style={{ backgroundColor: "white", borderRadius: 20, padding: "36px 32px", border: "2px solid #E8DDD0", boxShadow: "0 4px 24px rgba(0,0,0,0.07)", marginBottom: 16 }}>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 8, marginBottom: 8 }}>
+                <span style={{ fontFamily: "Playfair Display, serif", fontSize: 42, fontWeight: 700, color: "#3D7267" }}>$0</span>
+                <span style={{ fontSize: 16, color: "#888", textDecoration: "line-through" }}>$47</span>
+              </div>
+              <p style={{ color: "#888", fontSize: 13, marginBottom: 24 }}>100% off — apply code <strong>AUTOMATION</strong> at checkout</p>
+              <a
+                href="https://buy.stripe.com/cNicN444l0q4djre971gs0b"
+                className="cta-btn"
+                style={{ backgroundColor: "#3D7267", color: "white", display: "block", textAlign: "center", fontSize: 16 }}
+              >
+                {/* REPLACE href with your Stripe payment link */}
+                Claim Free Access →
+              </a>
+              <p style={{ color: "#aaa", fontSize: 12, marginTop: 16 }}>
+                You'll receive the audit link by email immediately after checkout.
               </p>
             </div>
-            <div className="form-wrapper">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfVPnTNyumqPpCFjeg6r3OfQzF5Ng7MJYjb_sMduMep0KBZTA/viewform?embedded=true"
-                width="100%"
-                height="900"
-                frameBorder="0"
-                marginHeight="0"
-                marginWidth="0"
-                title="Tech Scorecard Survey"
-                style={{ display: "block" }}
-              >
-                Loading…
-              </iframe>
-            </div>
+            <p style={{ color: "#aaa", fontSize: 12 }}>
+              Use code <strong style={{ color: "#3D7267", letterSpacing: "0.05em" }}>AUTOMATION</strong> at checkout to access for free.
+            </p>
           </div>
         </section>
 
@@ -295,16 +321,16 @@ export default function TechScorecard() {
           <div style={{ maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
             <span className="pill-tag" style={{ backgroundColor: "rgba(255,255,255,0.15)", color: "white" }}>What Happens Next</span>
             <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "white", marginBottom: 16 }}>
-              Your score is just the beginning.
+              You'll know in 5 minutes.
             </h2>
             <p style={{ color: "#D6EDE8", fontSize: 16, lineHeight: 1.7, maxWidth: 560, margin: "0 auto 40px" }}>
-              Once you complete the Tech Scorecard, you'll receive your Tech Health Score along with information about your specific tech challenges and how to fix them. From there, you decide your next step.
+              Claim your free access, complete the 5-minute audit, and get your Automation Health Score. You'll also receive follow-up emails with clarity on your specific gaps and how to fix them — from someone who actually builds these systems for a living.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 16, maxWidth: 600, margin: "0 auto" }}>
               {[
-                { step: "01", label: "Complete the 5-minute survey" },
-                { step: "02", label: "Receive your Tech Health Score by email" },
-                { step: "03", label: "Choose your path forward" },
+                { step: "01", label: "Claim free access — code applied at Stripe checkout" },
+                { step: "02", label: "Receive the audit link instantly by email" },
+                { step: "03", label: "Complete the 5-minute audit and get your score" },
               ].map((s, i) => (
                 <div key={i} style={{ backgroundColor: "rgba(255,255,255,0.1)", borderRadius: 14, padding: "24px 20px", textAlign: "center" }}>
                   <p style={{ fontFamily: "Playfair Display, serif", fontSize: 32, fontWeight: 700, color: "rgba(255,255,255,0.3)", margin: "0 0 8px" }}>{s.step}</p>
@@ -319,7 +345,7 @@ export default function TechScorecard() {
                 If you scored below 30
               </p>
               <p style={{ color: "white", fontSize: 16, lineHeight: 1.6, margin: 0 }}>
-                You don't need more strategy. You need infrastructure support. See the options below.
+                You don't need more strategy or a new platform. You need someone to get in there and fix what's broken. That's exactly what I do.
               </p>
             </div>
           </div>
@@ -331,10 +357,10 @@ export default function TechScorecard() {
             <div style={{ textAlign: "center", marginBottom: 48 }}>
               <span className="pill-tag">How We Can Work Together</span>
               <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 12 }}>
-                Ready to fix what the scorecard reveals?
+                Ready to fix what the audit reveals?
               </h2>
               <p style={{ color: "#555", fontSize: 15, maxWidth: 480, margin: "0 auto" }}>
-                Two ways to get your tech working the way it should.
+                Two ways to get your automations working the way they should.
               </p>
             </div>
 
