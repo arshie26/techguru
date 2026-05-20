@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 import sage from '../assets/sage.png'
 import sage_logo from '../assets/logo-sage.png'
 import kelsi from '../assets/kelsi.jpg'
@@ -93,6 +94,13 @@ function NavBar() {
       >
         Arsh Agarwal
       </span>
+      <Link to="/speaker"
+        href="#join"
+        className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90"
+        style={{ backgroundColor: "#3D7267", fontFamily: "DM Sans, sans-serif" }}
+      >
+        Book Arsh for a Workshop
+      </Link>
       <a
         href="#join"
         className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-opacity hover:opacity-90"
