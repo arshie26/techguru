@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TameYourTech from './pages/tameyourtech'
 import TheJoieLab from './pages/thejoielab'
 import Speaker from './pages/SpeakerPage'
+import TechAudit from './pages/TechAudit'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<TameYourTech />} />
           <Route path="/joielab" element={<TheJoieLab />} />
           <Route path="/speaker" element={<Speaker />} />
+          <Route path="/audit" element={<TechAudit />} />
 
         </Routes>
       </Router>
