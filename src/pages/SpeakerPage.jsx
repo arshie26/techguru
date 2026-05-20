@@ -435,7 +435,7 @@ function Footer() {
           <a href="https://arshtechguru.square.site" target="_blank" rel="noopener noreferrer"
             className="text-xs hover:opacity-100 opacity-50 transition-opacity"
             style={{ color: WHITE, fontFamily: "DM Sans, sans-serif" }}>
-            arshtechguru.square.site
+            https://techconcierge.vercel.app/
           </a>
           <a href="mailto:arshtist@gmail.com"
             className="text-xs hover:opacity-100 opacity-50 transition-opacity"
