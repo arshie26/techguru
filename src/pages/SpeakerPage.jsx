@@ -44,15 +44,15 @@ const topics = [
 
 const testimonials = [
   {
-    summary: "The go-to resource for tech and funnel issues — full stop.",
-    quote: "If you have tech or funnel building issues, Arsh is a wonderful resource!",
+    summary: "If you have tech or funnel building issues, Arsh is a wonderful resource!",
+    quote: "",
     name: "Sage Polaris",
     title: "Copywriting Coach & Launch Strategist",
     image: "../assets/sage.png",
     logo: "../assets/logo-sage.png"
   },
   {
-    summary: "From 1–2 clients a month to 30 new clients in 2 months.",
+    summary: "From 1–2 leads a month to 30 new leads in 2 months.",
     quote: "My systems clicked and I started seeing consistent sales. I went from a trickle of 1–2 clients per month to 30 new clients in 2 months. Arsh is what tech support would look like if it came with a chai tea latte, a soothing voice and a plan that actually works.",
     name: "Kelsi Taylor",
     title: "STEAM Educator & Course Creator",
@@ -417,7 +417,7 @@ function BookSection() {
         </a>
         <p className="text-xs mt-5 opacity-50 text-white"
           style={{ fontFamily: "DM Sans, sans-serif" }}>
-          arshtist@gmail.com · arshtechguru.square.site
+          arshtist@gmail.com · https://techconcierge.vercel.app/
         </p>
       </div>
     </section>
