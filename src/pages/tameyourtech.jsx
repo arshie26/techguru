@@ -4,7 +4,11 @@ import sage from '../assets/sage.png'
 import sage_logo from '../assets/logo-sage.png'
 import kelsi from '../assets/kelsi.jpg'
 import kelsi_logo from '../assets/logo-kelsi.png'
-
+import allysha_logo from '../assets/logo-allysha.jpg'
+import bilingual_logo from '../assets/logo-katharine.jpg'
+import kirby_logo from '../assets/logo-kirby.jpg'
+import mangla_logo from '../assets/logo-mangla.jpg'
+import tracy_logo from '../assets/logo-tracy.jpg'
 
 const painPoints = [
   {
@@ -161,13 +165,13 @@ function Hero() {
 
 function TrustedBy() {
   const logos = [
-    { src: "../assets/logo-allysha.jpg", alt: "Allysha Lavino" },
-    { src: "../assets/logo-sage.png", alt: "Sage Polaris" },
-    { src: "../assets/logo-tracy.jpg", alt: "Tracy Kay" },
-    { src: "../assets/logo-mangla.jpg", alt: "Business in a Bag" },
-    { src: "../assets/logo-katharine.jpg", alt: "Bilingual Roadmap" },
-    { src: "../assets/logo-kirby.jpg", alt: "KA Consulting" },
-    { src: "../assets/logo-kelsi.png", alt: "Joie Lab" }
+    { src: allysha_logo, alt: "Allysha Lavino" },
+    { src: sage_logo, alt: "Sage Polaris" },
+    { src: tracy_logo, alt: "Tracy Kay" },
+    { src: mangla_logo, alt: "Business in a Bag" },
+    { src: bilingual_logo, alt: "Bilingual Roadmap" },
+    { src: kirby_logo, alt: "KA Consulting" },
+    { src: kelsi_logo, alt: "Joie Lab" }
   ];
   return (
     <section className="py-10 px-6" style={{ backgroundColor: "#FFFFFF" }}>

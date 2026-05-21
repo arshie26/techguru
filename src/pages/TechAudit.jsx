@@ -2,6 +2,8 @@
 // Survey/lead magnet page for Arsh Agarwal Tech Concierge
 // Embeds the existing Google Form and wraps it with branded copy + offer cards
 
+import { Link } from 'react-router-dom'
+
 export default function TechScorecard() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F5EDE0", fontFamily: "DM Sans, sans-serif" }}>
@@ -126,9 +128,11 @@ export default function TechScorecard() {
 
         {/* ── NAV ── */}
         <nav style={{ backgroundColor: "#1C1C1C", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 50 }}>
+          <Link to='/'>
           <span style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 15, color: "white" }}>
             Arsh Agarwal · Tech Concierge
           </span>
+          </Link>
           <a href="#survey" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white", padding: "8px 20px", fontSize: 13 }}>
             Take the Survey →
           </a>
@@ -159,7 +163,7 @@ export default function TechScorecard() {
           </p>
           <div className="fade-in delay-3" style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" }}>
             <a href="#get-access" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white" }}>
-              Get Free Access →
+              Audit my automations →
             </a>
             <span style={{ fontSize: 13, color: "#888" }}>Coaches · Copywriters · Service Providers</span>
           </div>
@@ -230,7 +234,7 @@ export default function TechScorecard() {
                 The Automation Audit is a straight-talking self-assessment for coaches, copywriters, and service providers. No jargon. No complicated tech knowledge required. Just a clear-eyed look at the systems running your business right now — and an honest score that tells you where things stand.
               </p>
               <a href="#get-access" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white", fontSize: 15 }}>
-                Get Free Access →
+                Audit my automations →
               </a>
             </div>
             <div style={{ backgroundColor: "white", borderRadius: 20, padding: 32, border: "1px solid #E8DDD0", boxShadow: "0 4px 24px rgba(0,0,0,0.07)" }}>
@@ -285,7 +289,7 @@ export default function TechScorecard() {
         {/* ── THE SURVEY ── */}
         <section id="get-access" style={{ padding: "72px 24px", backgroundColor: "#F5EDE0" }}>
           <div style={{ maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
-            <span className="pill-tag">Get Free Access</span>
+            <span className="pill-tag">Audit my automations</span>
             <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 12 }}>
               Claim your free Automation Audit
             </h2>
@@ -304,7 +308,7 @@ export default function TechScorecard() {
                 style={{ backgroundColor: "#3D7267", color: "white", display: "block", textAlign: "center", fontSize: 16 }}
               >
                 {/* REPLACE href with your Stripe payment link */}
-                Claim Free Access →
+                Audit my automations →
               </a>
               <p style={{ color: "#aaa", fontSize: 12, marginTop: 16 }}>
                 You'll receive the audit link by email immediately after checkout.

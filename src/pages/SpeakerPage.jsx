@@ -196,11 +196,11 @@ function Bio() {
               </p>
               <p className="text-base leading-relaxed"
                 style={{ color: MID, fontFamily: "DM Sans, sans-serif" }}>
-                He holds a B.S. in Computer Science from the University of Maryland and spent years in corporate IT before leaving to serve female entrepreneurs directly. He builds and connects the technical pieces that keep businesses running: sales pages set up in Kartra, Kajabi, Squarespace, and GoHighLevel; payment processors connected and tested; tripwires firing; automations working; DNS records configured correctly so emails actually land in inboxes.
+                He holds a B.S. in Computer Science from the University of Maryland and spent several years in corporate IT before leaving to serve entrepreneurs directly. He builds and connects the technical pieces that keep businesses running: sales pages set up in Kartra, Wordpress, GoHighLevel, and more; payment processors connected and tested; tripwires firing; automations working; DNS records configured correctly so emails actually land in inboxes.
               </p>
               <p className="text-base leading-relaxed"
                 style={{ color: MID, fontFamily: "DM Sans, sans-serif" }}>
-                What makes Arsh different: he doesn't teach theory — he builds live, in front of the room. He's not there to explain why your page isn't converting. He's there to show you how to get it live, connected, and working correctly. Audiences leave with something done, not just something to do later.
+                What makes Arsh different: he doesn't teach theory — he builds live, in front of the room. He's not there to explain why your page isn't converting. He's there to show you how to get it live, connected, and working correctly. Audiences leave with something done, not just something to do later. Audiences feel heard, understood and relieved.
               </p>
             </div>
 
