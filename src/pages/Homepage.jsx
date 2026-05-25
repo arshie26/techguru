@@ -576,19 +576,19 @@ function AuditCTA() {
       <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 400, borderRadius: "50%", backgroundColor: WHITE, opacity: 0.04, pointerEvents: "none" }} />
       <div style={{ maxWidth: 680, margin: "0 auto", textAlign: "center", position: "relative" }}>
         <Reveal>
-          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)", marginBottom: 20 }}>Free · 5 Minutes · No Tech Knowledge Required</p>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)", marginBottom: 20 }}>5 Minutes · No Tech Knowledge Required</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(2rem, 5vw, 3.8rem)", color: WHITE, marginBottom: 18, lineHeight: 1.1 }}>
             Not sure where<br />
             your tech is <em>breaking?</em>
           </h2>
           <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 17, color: "rgba(255,255,255,0.85)", lineHeight: 1.7, maxWidth: 480, margin: "0 auto 40px" }}>
-            Take the free Automation Audit. 5 honest questions about your business — and you'll know exactly what to fix first.
+            Take the Automation Audit. 5 honest questions about your business — and you'll know exactly what to fix first.
           </p>
           <a href="/audit" target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-block", backgroundColor: WHITE, color: TEAL, fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 16, padding: "18px 44px", borderRadius: 99, textDecoration: "none", boxShadow: "0 8px 32px rgba(0,0,0,0.15)", transition: "all 0.2s" }}>
-            Take the Free Automation Audit →
+            Take the Automation Audit →
           </a>
-          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12, color: "rgba(255,255,255,0.5)", marginTop: 16 }}>Use code <strong style={{ color: "rgba(255,255,255,0.85)", letterSpacing: "0.06em" }}>AUTOMATION</strong> at checkout for 100% off</p>
+          
         </Reveal>
       </div>
     </section>
