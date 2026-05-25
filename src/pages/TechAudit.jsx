@@ -141,7 +141,7 @@ export default function TechScorecard() {
         {/* ── HERO ── */}
         <section style={{ padding: "72px 24px 80px", maxWidth: 900, margin: "0 auto" }}>
           <div className="fade-in">
-            <span className="pill-tag">Free Automation Audit · 5 Minutes · Instant Access</span>
+            <span className="pill-tag">Automation Audit · 5 Minutes</span>
           </div>
           <h1 className="fade-in delay-1" style={{
             fontFamily: "Playfair Display, serif",
@@ -156,7 +156,7 @@ export default function TechScorecard() {
             <span style={{ color: "#3D7267", fontStyle: "italic" }}>and you might not know it yet.</span>
           </h1>
           <p className="fade-in delay-2" style={{ fontSize: 18, color: "#555", lineHeight: 1.7, maxWidth: 580, marginBottom: 16 }}>
-            The free Automation Audit is a 5-minute self-assessment that shows you exactly where your systems are leaking leads, wasting time, or quietly breaking down between launches.
+            The Automation Audit is a 5-minute self-assessment that shows you exactly where your systems are leaking leads, wasting time, or quietly breaking down between launches.
           </p>
           <p className="fade-in delay-2" style={{ fontSize: 15, color: "#888", lineHeight: 1.6, maxWidth: 540, marginBottom: 32 }}>
             No tech knowledge required. Just honest answers about how your business actually runs — and a clear picture of what to fix first.
@@ -173,12 +173,12 @@ export default function TechScorecard() {
         <section style={{ backgroundColor: "#3D7267", padding: "18px 24px" }}>
           <div style={{ maxWidth: 860, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 16, textAlign: "center" }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-              <span style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: 700, color: "white" }}>Free</span>
-              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", textDecoration: "line-through" }}>$47</span>
+              <span style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: 700, color: "white" }}>$47</span>
+              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", textDecoration: "line-through" }}>$97</span>
             </div>
             <div style={{ width: 1, height: 24, backgroundColor: "rgba(255,255,255,0.2)", flexShrink: 0 }} />
             <p style={{ color: "rgba(255,255,255,0.9)", fontSize: 14, margin: 0, fontFamily: "DM Sans, sans-serif" }}>
-              Use code <strong style={{ backgroundColor: "rgba(255,255,255,0.15)", padding: "2px 10px", borderRadius: 6, letterSpacing: "0.05em" }}>AUTOMATION</strong> at checkout for 100% off
+              50% OFF for a LIMITED TIME
             </p>
             <div style={{ width: 1, height: 24, backgroundColor: "rgba(255,255,255,0.2)", flexShrink: 0 }} />
             <a href="#get-access" style={{ color: "white", fontSize: 13, fontWeight: 700, textDecoration: "none", opacity: 0.9 }}>
@@ -291,15 +291,15 @@ export default function TechScorecard() {
           <div style={{ maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
             <span className="pill-tag">Audit my automations</span>
             <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 700, color: "#1C1C1C", marginBottom: 12 }}>
-              Claim your free Automation Audit
+              Claim your Automation Audit
             </h2>
             <p style={{ color: "#555", fontSize: 15, maxWidth: 420, margin: "0 auto 32px", lineHeight: 1.7 }}>
-              Click below to claim your free access. You'll receive the audit link instantly by email — takes about 5 minutes to complete.
+              Click below to claim your access. You'll receive the audit link instantly by email — takes about 5 minutes to complete.
             </p>
             <div style={{ backgroundColor: "white", borderRadius: 20, padding: "36px 32px", border: "2px solid #E8DDD0", boxShadow: "0 4px 24px rgba(0,0,0,0.07)", marginBottom: 16 }}>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 8, marginBottom: 8 }}>
-                <span style={{ fontFamily: "Playfair Display, serif", fontSize: 42, fontWeight: 700, color: "#3D7267" }}>$0</span>
-                <span style={{ fontSize: 16, color: "#888", textDecoration: "line-through" }}>$47</span>
+                <span style={{ fontFamily: "Playfair Display, serif", fontSize: 42, fontWeight: 700, color: "#3D7267" }}>$47</span>
+                <span style={{ fontSize: 16, color: "#888", textDecoration: "line-through" }}>$97</span>
               </div>
               <p style={{ color: "#888", fontSize: 13, marginBottom: 24 }}>100% off — apply code <strong>AUTOMATION</strong> at checkout</p>
               <a
@@ -314,9 +314,7 @@ export default function TechScorecard() {
                 You'll receive the audit link by email immediately after checkout.
               </p>
             </div>
-            <p style={{ color: "#aaa", fontSize: 12 }}>
-              Use code <strong style={{ color: "#3D7267", letterSpacing: "0.05em" }}>AUTOMATION</strong> at checkout to access for free.
-            </p>
+            
           </div>
         </section>
 
@@ -434,7 +432,7 @@ export default function TechScorecard() {
               © {new Date().getFullYear()} Arsh Agarwal · Tech Concierge
             </p>
             <div style={{ display: "flex", gap: 24 }}>
-              <a href="https://arshtechguru.square.site" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ color: "#666" }}>
+              <a href="https://techconcierge.vercel.app/" target="_blank" rel="noopener noreferrer" className="nav-link" style={{ color: "#666" }}>
                 arshtechguru.square.site
               </a>
               <a href="mailto:arshtist@gmail.com" className="nav-link" style={{ color: "#666" }}>
