@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TameYourTech from './pages/tameyourtech'
+import TechWhisperer from './pages/TechWhisperer'
 import TheJoieLab from './pages/thejoielab'
 import Speaker from './pages/SpeakerPage'
 import TechAudit from './pages/TechAudit'
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path='/tameyourtech' element={<TameYourTech />} />
+          <Route path='/techwhisperer' element={<TechWhisperer />} />
           <Route path="/joielab" element={<TheJoieLab />} />
           <Route path="/speaker" element={<Speaker />} />
           <Route path="/audit" element={<TechAudit />} />

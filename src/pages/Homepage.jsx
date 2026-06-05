@@ -170,7 +170,7 @@ function Nav() {
           ["#home", "Home"],
           ["#values", "Values"],
           ["/tameyourtech", "Tame Your Tech"],
-          ["#services", "Tech Whisperer"],
+          ["/techwhisperer", "Tech Whisperer"],
           ["#services", "Packages"],
           ["/audit", "Tech Audit"],
           ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],

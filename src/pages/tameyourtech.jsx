@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import sage from '../assets/sage.png'
 import sage_logo from '../assets/logo-sage.png'
 import kelsi from '../assets/kelsi.jpg'
 import kelsi_logo from '../assets/logo-kelsi.png'
 import allysha_logo from '../assets/logo-allysha.jpg'
+import allysha from '../assets/allysha.jpg'
 import bilingual_logo from '../assets/logo-katharine.jpg'
 import kirby_logo from '../assets/logo-kirby.jpg'
 import mangla_logo from '../assets/logo-mangla.jpg'
+import mangla from '../assets/mangla.jpg'
 import tracy_logo from '../assets/logo-tracy.jpg'
+
+const TEAL    = "#3D7267";
+const TAN_LT  = "#EDE4D6";
+const DARK    = "#1C1C1C";
+const MUTED   = "#999999";
+const WHITE   = "#FFFFFF";
+
 
 const painPoints = [
   {
@@ -88,6 +97,89 @@ const faqs = [
     a: "Tame Your Tech is one focused task per month — lightweight, simple, no overwhelm. Tech Whisperer is full ecosystem management: I'm in your business every month keeping everything running, proactively. If you're not sure which fits, start here."
   }
 ];
+
+function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  useEffect(() => {
+    const h = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", h);
+    return () => window.removeEventListener("scroll", h);
+  }, []);
+
+  return (
+    <nav style={{
+      position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
+      padding: "14px 32px",
+      backgroundColor: scrolled ? "rgba(245,237,224,0.96)" : "transparent",
+      backdropFilter: scrolled ? "blur(12px)" : "none",
+      borderBottom: scrolled ? `1px solid ${TAN_LT}` : "none",
+      transition: "all 0.4s ease",
+      display: "flex", alignItems: "center", justifyContent: "space-between"
+    }}>
+      {/* Logo / Name */}
+      <a href="#home" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ width: 34, height: 34, borderRadius: "50%", backgroundColor: TEAL, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontWeight: 700, fontSize: 14, fontFamily: "DM Sans, sans-serif", flexShrink: 0 }}>A</div>
+        <div>
+          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, color: DARK, margin: 0, lineHeight: 1.1 }}>Arsh Agarwal</p>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 10, color: MUTED, margin: 0, letterSpacing: "0.08em", textTransform: "uppercase" }}>Tech Concierge</p>
+        </div>
+      </a>
+
+      {/* Nav links */}
+      <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
+        {[
+          ["#home", "Home"],
+          ["#values", "Values"],
+          ["/tameyourtech", "Tame Your Tech"],
+          ["#services", "Tech Whisperer"],
+          ["#services", "Packages"],
+          ["/audit", "Tech Audit"],
+          ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],
+          ["/speaker", "Speaker Page"],
+          ["https://tidycal.com/arshtist/60min", "Book a Call"]
+
+        ].map(([href, label]) => (
+          <a key={label} href={href}
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, fontWeight: 500, color: DARK, textDecoration: "none", transition: "color 0.2s" }}
+            onMouseEnter={e => e.currentTarget.style.color = TEAL}
+            onMouseLeave={e => e.currentTarget.style.color = DARK}
+          >{label}</a>
+        ))}
+
+        {/* More dropdown */}
+        <div style={{ position: "relative" }}
+          onMouseEnter={() => setMoreOpen(true)}
+          onMouseLeave={() => setMoreOpen(false)}>
+          <button style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, fontWeight: 500, color: DARK, background: "none", border: "none", cursor: "pointer", padding: 0 }}>
+            More ▾
+          </button>
+          {/*moreOpen && (
+            <div style={{ position: "absolute", top: "calc(100% + 10px)", right: 0, backgroundColor: WHITE, borderRadius: 10, padding: "8px 0", boxShadow: "0 8px 32px rgba(0,0,0,0.1)", minWidth: 200, border: `1px solid ${TAN_LT}`, zIndex: 200 }}>
+              {[
+                ["https://arshie26.github.io/techgurusurvey/", "Tech Audit"],
+                ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],
+                ["../pages/SpeakerPage", "Speaker Page"],
+                ["https://tidycal.com/arshtist/60min", "Book a Call"],
+              ].map(([href, label]) => (
+                <a key={label} href={href} target={href.startsWith("http") ? "_blank" : "_self"} rel="noopener noreferrer"
+                  style={{ display: "block", padding: "10px 20px", fontFamily: "DM Sans, sans-serif", fontSize: 13, color: DARK, textDecoration: "none", transition: "background 0.15s" }}
+                  onMouseEnter={e => e.currentTarget.style.backgroundColor = TEAL_LT}
+                  onMouseLeave={e => e.currentTarget.style.backgroundColor = "transparent"}
+                >{label}</a>
+              ))}
+            </div>
+          )*/}
+        </div>
+
+        <a href="https://techconcierge.vercel.app/audit" target="_blank" rel="noopener noreferrer"
+          style={{ backgroundColor: TEAL, color: WHITE, fontFamily: "DM Sans, sans-serif", fontWeight: 600, fontSize: 13, padding: "10px 22px", borderRadius: 99, textDecoration: "none", transition: "opacity 0.2s", boxShadow: `0 0 20px ${TEAL}30` }}>
+          Take the Audit →
+        </a>
+      </div>
+    </nav>
+  );
+}
 
 function NavBar() {
   return (
@@ -231,17 +323,16 @@ function SageSpotlight() {
             className="font-[\'Playfair_Display\'] font-bold text-base md:text-lg mb-4"
             style={{ color: "#1C1C1C", fontFamily: "Playfair Display, serif" }}
           >
-            "The go-to resource for tech and funnel issues — full stop."
+            "If you have tech or funnel building issues, Arsh is a wonderful resource!"
           </p>
           <p
             className="text-sm italic leading-relaxed mb-6"
             style={{ color: "#6B6B6B", fontFamily: "DM Sans, sans-serif" }}
           >
-            "If you have tech or funnel building issues, Arsh is a wonderful resource!"
           </p>
           <div className="flex items-center gap-4">
             <img
-              src="../assets/sage.png"
+              src={sage}
               alt="Sage Polaris"
               className="w-14 h-14 rounded-full object-cover flex-shrink-0"
               style={{ border: "2px solid #E8DDD0" }}
@@ -552,7 +643,7 @@ function Testimonial1() {
       quote="Before we started, I just had a massive to do list that never actually ended. I felt like the tech was in my way. Now I'm so much more productive. Working with Arsh brought my weekends back with my family. I didn't have to hustle every day. I knew what emails worked really well. If I need a cash injection, I can use that. I went from random email marketing to launching strategically through email which gave me a four figure launch. Arsh gave me the confidence to put out more offers and use the tech to my advantage."
       name="Mangla Sachdev"
       business="Expat Business in a Bag"
-      image="../assets/mangla.jpg"
+      image={mangla}
       bg="#F5EDE0"
     />
   );
@@ -562,11 +653,11 @@ function Testimonial1() {
 function Testimonial2() {
   return (
     <TestimonialCard
-      summary="One message from Arsh turned a breakdown day into a breakthrough."
+      summary="One session with Arsh turned a breakdown day into a breakthrough."
       quote="This was my one day dedicated to client work. I hit one wall after another. I had to call my mom for emotional support. I can't go into full breakdown. I've already done that. I can't solve this. You have set my day back on track."
       name="Allysha Lavino"
       business="Real Life Magic"
-      image="../assets/allysha.jpg"
+      image={allysha}
       bg="#FFFFFF"
     />
   );
@@ -576,11 +667,11 @@ function Testimonial2() {
 function Testimonial3() {
   return (
     <TestimonialCard
-      summary="From 1-2 clients a month to 30 new clients in 2 months."
+      summary="From 1-2 leads a month to 30 new leads in 2 months."
       quote="For years, I had lots of ideas, but no clue how to execute tech tasks efficiently. I would add a tag, but it wouldn't work. I would spend 2 hours adding in automations, 30 minutes setting up an email, and then another 2 hours trying to figure out why the test didn't land in my inbox. Then came Arsh! And all of a sudden, my systems clicked, and I started seeing consistent sales. I went from a trickle of 1-2 clients per month to 30 new clients in 2 months. I was mind blown. Arsh is what tech support would look like if it came with a chai tea latte, a soothing voice and a plan that actually works."
       name="Kelsi Taylor"
       business="The Joie Lab"
-      image="../assets/kelsi.jpg"
+      image={kelsi}
       bg="#F5EDE0"
     />
   );
@@ -698,7 +789,7 @@ export default function TameYourTech() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap');
       `}</style>
-      <NavBar />
+      <Nav />
       <Hero />
       <SageSpotlight />        {/* Trust Builder 1 — Prominent Figure */}
       <PainPoints />
