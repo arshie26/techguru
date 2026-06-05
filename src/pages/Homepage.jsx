@@ -635,11 +635,11 @@ function Footer() {
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
           {[
-            ["../pages/TameYourTech", "Tame Your Tech"],
-            ["../pages/TechWhisperer", "Tech Whisperer"],
-            ["https://arshtechguru.square.site/tech-guru-packages", "Packages"],
-            ["https://arshie26.github.io/techgurusurvey/", "Automation Audit"],
-            ["../pages/SpeakerPage", "Speaker"],
+            ["/TameYourTech", "Tame Your Tech"],
+            ["/TechWhisperer", "Tech Whisperer"],
+            ["#services", "Packages"],
+            ["/audit", "Automation Audit"],
+            ["/speaker", "Speaker"],
             ["mailto:arshtist@gmail.com", "Contact"],
           ].map(([href, label]) => (
             <a key={label} href={href}
