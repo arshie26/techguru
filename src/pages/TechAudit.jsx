@@ -161,7 +161,7 @@ export default function TechScorecard() {
       display: "flex", alignItems: "center", justifyContent: "space-between"
     }}>
       {/* Logo / Name */}
-      <a href="#home" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
+      <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
         <div style={{ width: 34, height: 34, borderRadius: "50%", backgroundColor: TEAL, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontWeight: 700, fontSize: 14, fontFamily: "DM Sans, sans-serif", flexShrink: 0 }}>A</div>
         <div>
           <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, color: DARK, margin: 0, lineHeight: 1.1 }}>Arsh Agarwal</p>
