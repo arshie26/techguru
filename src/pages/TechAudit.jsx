@@ -3,8 +3,30 @@
 // Embeds the existing Google Form and wraps it with branded copy + offer cards
 
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+
+const TEAL    = "#3D7267";
+const TEAL2   = "#2E5650";
+const TEAL_LT = "#EAF2F0";
+const CREAM   = "#F5EDE0";
+const TAN     = "#C4A882";
+const TAN_LT  = "#EDE4D6";
+const DARK    = "#1C1C1C";
+const MID     = "#6B6B6B";
+const MUTED   = "#999999";
+const WHITE   = "#FFFFFF";
 
 export default function TechScorecard() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const h = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", h);
+    return () => window.removeEventListener("scroll", h);
+  }, []);
+
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F5EDE0", fontFamily: "DM Sans, sans-serif" }}>
       <style>{`
@@ -126,17 +148,49 @@ export default function TechScorecard() {
 
       <div className="survey-page">
 
-        {/* ── NAV ── */}
-        <nav style={{ backgroundColor: "#1C1C1C", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, zIndex: 50 }}>
-          <Link to='/'>
-          <span style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 15, color: "white" }}>
-            Arsh Agarwal · Tech Concierge
-          </span>
-          </Link>
-          <a href="#survey" className="cta-btn" style={{ backgroundColor: "#3D7267", color: "white", padding: "8px 20px", fontSize: 13 }}>
-            Take the Survey →
-          </a>
-        </nav>
+        
+
+        
+    <nav style={{
+      position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
+      padding: "14px 32px",
+      backgroundColor: scrolled ? "rgba(245,237,224,0.96)" : "transparent",
+      backdropFilter: scrolled ? "blur(12px)" : "none",
+      borderBottom: scrolled ? `1px solid ${TAN_LT}` : "none",
+      transition: "all 0.4s ease",
+      display: "flex", alignItems: "center", justifyContent: "space-between"
+    }}>
+      {/* Logo / Name */}
+      <a href="#home" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ width: 34, height: 34, borderRadius: "50%", backgroundColor: TEAL, display: "flex", alignItems: "center", justifyContent: "center", color: WHITE, fontWeight: 700, fontSize: 14, fontFamily: "DM Sans, sans-serif", flexShrink: 0 }}>A</div>
+        <div>
+          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, color: DARK, margin: 0, lineHeight: 1.1 }}>Arsh Agarwal</p>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 10, color: MUTED, margin: 0, letterSpacing: "0.08em", textTransform: "uppercase" }}>Tech Concierge</p>
+        </div>
+      </a>
+
+      {/* Nav links */}
+      <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
+        {[
+          ["/", "Home"],
+          ["/#values", "Values"],
+          ["/tameyourtech", "Tame Your Tech"],
+          ["/techwhisperer", "Tech Whisperer"],
+          ["/#services", "Packages"],
+          ["/audit", "Tech Audit"],
+          ["/speaker", "Speaker Page"],
+          ["https://tidycal.com/arshtist/60min", "Book a Call"]
+
+        ].map(([href, label]) => (
+          <a key={label} href={href}
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, fontWeight: 500, color: DARK, textDecoration: "none", transition: "color 0.2s" }}
+            onMouseEnter={e => e.currentTarget.style.color = TEAL}
+            onMouseLeave={e => e.currentTarget.style.color = DARK}
+          >{label}</a>
+        ))}
+
+        </div>  
+      </nav>
 
         {/* ── HERO ── */}
         <section style={{ padding: "72px 24px 80px", maxWidth: 900, margin: "0 auto" }}>

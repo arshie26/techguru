@@ -129,13 +129,12 @@ function Nav() {
       {/* Nav links */}
       <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
         {[
-          ["#home", "Home"],
-          ["#values", "Values"],
+          ["/", "Home"],
+          ["/#values", "Values"],
           ["/tameyourtech", "Tame Your Tech"],
-          ["#services", "Tech Whisperer"],
-          ["#services", "Packages"],
+          ["/techwhisperer", "Tech Whisperer"],
+          ["/#services", "Packages"],
           ["/audit", "Tech Audit"],
-          ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],
           ["/speaker", "Speaker Page"],
           ["https://tidycal.com/arshtist/60min", "Book a Call"]
 

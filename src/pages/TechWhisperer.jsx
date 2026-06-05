@@ -211,16 +211,14 @@ function Nav() {
       {/* Nav links */}
       <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
         {[
-          ["#home", "Home"],
-          ["#values", "Values"],
+          ["/", "Home"],
+          ["/#values", "Values"],
           ["/tameyourtech", "Tame Your Tech"],
           ["/techwhisperer", "Tech Whisperer"],
-          ["#services", "Packages"],
+          ["/#services", "Packages"],
           ["/audit", "Tech Audit"],
-          ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],
           ["/speaker", "Speaker Page"],
           ["https://tidycal.com/arshtist/60min", "Book a Call"]
-
         ].map(([href, label]) => (
           <a key={label} href={href}
             style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, fontWeight: 500, color: DARK, textDecoration: "none", transition: "color 0.2s" }}

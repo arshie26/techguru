@@ -173,7 +173,6 @@ function Nav() {
           ["/techwhisperer", "Tech Whisperer"],
           ["#services", "Packages"],
           ["/audit", "Tech Audit"],
-          ["https://arshtechguru.square.site/tame-your-tech", "DKIM Guide Bundle"],
           ["/speaker", "Speaker Page"],
           ["https://tidycal.com/arshtist/60min", "Book a Call"]
 
