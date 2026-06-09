@@ -215,6 +215,7 @@ function Nav() {
           ["/#values", "Values"],
           ["/tameyourtech", "Tame Your Tech"],
           ["/techwhisperer", "Tech Whisperer"],
+          ["/inboxrescue", "Inbox Rescue GPT"],
           ["/#services", "Packages"],
           ["/audit", "Tech Audit"],
           ["/speaker", "Speaker Page"],

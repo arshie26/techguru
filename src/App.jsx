@@ -4,8 +4,11 @@ import TameYourTech from './pages/tameyourtech'
 import TechWhisperer from './pages/TechWhisperer'
 import TheJoieLab from './pages/thejoielab'
 import Speaker from './pages/SpeakerPage'
+import TechTalk from './pages/TechTalk'
+import DWY from './pages/TechTalk2'
 import TechAudit from './pages/TechAudit'
 import Homepage from './pages/Homepage'
+import InboxRescue from './pages/InboxRescue'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -23,7 +26,10 @@ function App() {
           <Route path='/tameyourtech' element={<TameYourTech />} />
           <Route path='/techwhisperer' element={<TechWhisperer />} />
           <Route path="/joielab" element={<TheJoieLab />} />
+          <Route path="/inboxrescue" element={<InboxRescue />} />
           <Route path="/speaker" element={<Speaker />} />
+          <Route path="/salespageworkshop" element={<TechTalk />} />
+          <Route path="/dwyworkshop" element={<DWY />} />
           <Route path="/audit" element={<TechAudit />} />
 
         </Routes>
