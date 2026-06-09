@@ -49,6 +49,7 @@ const bullets = [
   { icon: "🗺️", text: "How to get AI to walk you through all the manual steps" },
   { icon: "⚖️", text: "What AI handles vs. what you still control" },
   { icon: "🔁", text: "How to iterate fast using AI as your build partner" },
+  { icon: "📋", text: "A series of actionable, step-by-step prompts you keep — walking you through sales page creation and payment processor connection" },
 ];
 
 function NavBar() {
@@ -188,7 +189,7 @@ function Hero() {
             textTransform: "uppercase", color: WHITE, marginBottom: 24,
             backgroundColor: TEAL, padding: "6px 18px", borderRadius: 99
           }}>
-            Free Tech Talk · Coming Soon
+            Free Tech Talk
           </div>
         </Reveal>
 
@@ -198,7 +199,7 @@ function Hero() {
             fontSize: "clamp(2.8rem, 7vw, 5.5rem)", lineHeight: 1.05,
             color: DARK, marginBottom: 8
           }}>
-            Stop waiting on<br />
+            Stop waiting on
             a developer.
           </h1>
         </Reveal>
@@ -251,7 +252,6 @@ function Hero() {
             borderTop: `1px solid ${TAN_LT}`
           }}>
             {[
-              { icon: "📅", label: "Date & Time", val: "Coming Soon" },
               { icon: "💻", label: "Format", val: "Live · Free" },
               { icon: "🎯", label: "For", val: "Coaches, Copywriters, Service Providers" },
             ].map((s, i) => (
@@ -366,6 +366,7 @@ function WhatYouGet() {
                 "How to test every element before you launch so nothing breaks on launch day",
                 "How to get AI to walk you through all the manual steps",
                 "What AI handles vs. what you still need to control",
+                "A series of actionable, step-by-step prompts to build your next sales page and connect your payment processor — yours to keep",
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", marginBottom: 14 }}>
                   <div style={{
@@ -380,6 +381,91 @@ function WhatYouGet() {
               ))}
             </div>
           </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SuggestedFormat() {
+  const steps = [
+    {
+      n: "01",
+      title: "The Anatomy of a Sales Page",
+      body: "We start with the fundamentals — the essential sections every sales page needs, what order they go in, and why each one exists. No fluff, no theory. Just the structure that works."
+    },
+    {
+      n: "02",
+      title: "The AI Prompts That Build It",
+      body: "I walk you through the exact prompts I give AI to generate each section of the page. You'll leave with a prompt library you can use again and again for any offer. ASK ME ANYTHING"
+    },
+    {
+      n: "03",
+      title: "Live Construction Demo",
+      body: "I build a sales page live using HTML, CSS, and JavaScript — and show you how AI navigates you through the construction step by step. The same process works REGARDLESS OF PLATFORM. AI walks you through it either way. ASK ME ANYTHING"
+    },
+    {
+      n: "04",
+      title: "You Start Building",
+      body: "Attendees start building their own sales page using the instructions, prompts, and process from the demo. Your offer, your copy, your page — started during the session."
+    },
+    {
+      n: "05",
+      title: "Live Troubleshooting (Time Dependent)",
+      body: "Got stuck? I'm in the room. Attendees can ask questions and troubleshoot in real time as they work through building their page."
+    },
+  ];
+
+  return (
+    <section style={{ backgroundColor: WHITE, padding: "90px 48px" }}>
+      <div style={{ maxWidth: 760, margin: "0 auto" }}>
+        <Reveal>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+            <div style={{ width: 28, height: 1, backgroundColor: TEAL, opacity: 0.5 }} />
+            <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: TEAL, margin: 0 }}>
+              How It Runs
+            </p>
+          </div>
+          <h2 style={{
+            fontFamily: "'Playfair Display', serif", fontWeight: 700,
+            fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: DARK, marginBottom: 12, lineHeight: 1.2
+          }}>
+            Suggested format.
+          </h2>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: MID, lineHeight: 1.7, marginBottom: 48, maxWidth: 520 }}>
+            Here is how I typically run this talk — from context to construction to hands-on building.
+          </p>
+        </Reveal>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          {steps.map((step, i) => (
+            <Reveal key={i} delay={i * 0.07}>
+              <div style={{
+                display: "flex", gap: 28, alignItems: "flex-start",
+                padding: "28px 0",
+                borderBottom: i < steps.length - 1 ? "1px solid " + TAN_LT : "none"
+              }}>
+                {/* Step number */}
+                <div style={{ flexShrink: 0, textAlign: "right", width: 40 }}>
+                  <p style={{
+                    fontFamily: "'Playfair Display', serif", fontWeight: 700,
+                    fontSize: 32, color: TAN, lineHeight: 1, margin: 0, opacity: 0.6
+                  }}>{step.n}</p>
+                </div>
+                {/* Content */}
+                <div style={{ flex: 1 }}>
+                  <h3 style={{
+                    fontFamily: "'Playfair Display', serif", fontWeight: 700,
+                    fontSize: 18, color: DARK, marginBottom: 8
+                  }}>{step.title}</h3>
+                  <p style={{
+                    fontFamily: "DM Sans, sans-serif", fontSize: 15,
+                    color: MID, lineHeight: 1.7, margin: 0
+                  }}>{step.body}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
@@ -579,6 +665,7 @@ export default function TechTalk() {
       <Hero />
       <WhatYoullLearn />
       <WhatYouGet />
+      <SuggestedFormat />
       <WhoItsFor />
       <AboutSection />
       <SignupSection />
