@@ -180,7 +180,7 @@ function Nav() {
 
         ].map(([href, label]) => (
           <a key={label} href={href}
-            style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, fontWeight: 500, color: DARK, textDecoration: "none", transition: "color 0.2s" }}
+            style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500, color: DARK, textDecoration: "none", transition: "color 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.color = TEAL}
             onMouseLeave={e => e.currentTarget.style.color = DARK}
           >{label}</a>
@@ -632,8 +632,8 @@ function Footer() {
     <footer style={{ backgroundColor: DARK, padding: "32px 48px" }}>
       <div style={{ maxWidth: 1000, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
         <div>
-          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, color: `${TEAL}CC`, margin: 0 }}>Arsh Agarwal · Tech Concierge</p>
-          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 11, color: "#555", margin: "2px 0 0", letterSpacing: "0.05em" }}>arshtist@gmail.com</p>
+          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 24, color: `${TEAL}CC`, margin: 0 }}>Arsh Agarwal · Tech Concierge</p>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: "white", margin: "2px 0 0", letterSpacing: "0.05em" }}>arshtist@gmail.com</p>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 24 }}>
           {[
@@ -648,9 +648,9 @@ function Footer() {
             ["mailto:arshtist@gmail.com", "Contact"],
           ].map(([href, label]) => (
             <a key={label} href={href}
-              style={{ color: "#555", fontFamily: "DM Sans, sans-serif", fontSize: 11, textDecoration: "none", letterSpacing: "0.05em", transition: "color 0.2s" }}
-              onMouseEnter={e => e.currentTarget.style.color = `${TEAL}AA`}
-              onMouseLeave={e => e.currentTarget.style.color = "#555"}
+              style={{ color: "white", fontFamily: "DM Sans, sans-serif", fontSize: 16, textDecoration: "none", letterSpacing: "0.05em", transition: "color 0.2s" }}
+              onMouseEnter={e => e.currentTarget.style.color = `white`}
+              onMouseLeave={e => e.currentTarget.style.color = "white"}
             >{label}</a>
           ))}
         </div>
