@@ -172,13 +172,15 @@ export default function TechScorecard() {
       {/* Nav links */}
       <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
         {[
-          ["/", "Home"],
+          ["/#home", "Home"],
           ["/#values", "Values"],
           ["/tameyourtech", "Tame Your Tech"],
           ["/techwhisperer", "Tech Whisperer"],
-          ["/#services", "Packages"],
+          ["/inboxrescue", "Inbox Rescue GPT"],
+          ["#services", "Packages"],
           ["/audit", "Tech Audit"],
           ["/speaker", "Speaker Page"],
+          ["/salespageworkshop", "Workshop"],
           ["https://tidycal.com/arshtist/60min", "Book a Call"]
 
         ].map(([href, label]) => (

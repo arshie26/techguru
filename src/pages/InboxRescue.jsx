@@ -5,6 +5,7 @@
  */
 
 import { useState, useEffect, useRef } from "react";
+import HomeFooter from '../components/HomeFooter'
 
 const TEAL    = "#3D7267";
 const TEAL2   = "#2E5650";
@@ -526,7 +527,7 @@ export default function InboxRescue() {
       <About />
       <Values />
       <FinalCTA />
-      <Footer />
+      <HomeFooter />
     </div>
   );
 }

@@ -4,6 +4,7 @@
  * Simple single-page: Hero → What You'll Learn → Who It's For → Email Signup → Footer
  */
 
+import HomeFooter from "../components/HomeFooter";
 import { useState, useEffect, useRef } from "react";
 
 const TEAL    = "#3D7267";
@@ -669,7 +670,7 @@ export default function TechTalk() {
       <WhoItsFor />
       <AboutSection />
       <SignupSection />
-      <Footer />
+      <HomeFooter />
     </div>
   );
 }

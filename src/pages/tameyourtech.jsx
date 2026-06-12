@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
+import HomeFooter from '../components/HomeFooter'
+
 import sage from '../assets/sage.png'
 import sage_logo from '../assets/logo-sage.png'
 import kelsi from '../assets/kelsi.jpg'
@@ -803,7 +805,7 @@ export default function TameYourTech() {
       <Testimonial3 />         {/* Trust Builder 2 — Client #3, before CTA */}
       <JoinSection />
       <FAQ />
-      <Footer />
+      <HomeFooter />
     </div>
   );
 }

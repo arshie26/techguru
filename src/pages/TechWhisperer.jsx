@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import HomeFooter from '../components/HomeFooter'
 
 
 import sage from '../assets/sage.png'
@@ -874,7 +875,7 @@ export default function TechWhisperer() {
       <ApplySection />
       <FAQ />
       <FinalCTA />
-      <Footer />
+      <HomeFooter />
     </div>
   );
 }
