@@ -10,6 +10,9 @@ import TechAudit from './pages/TechAudit'
 import Homepage from './pages/Homepage'
 import InboxRescue from './pages/InboxRescue'
 import ChristmasAudit from './pages/ChristmasAudit'
+import Disclaimer from './pages/Disclaimer'
+import Privacy from './pages/PrivacyPolicy'
+import Terms from './pages/TermsOfService'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -33,7 +36,9 @@ function App() {
           <Route path="/dwyworkshop" element={<DWY />} />
           <Route path="/audit" element={<TechAudit />} />
           <Route path="/christmasaudit" element={<ChristmasAudit />} />
-
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/termsofservice" element={<Terms />} />
         </Routes>
       </Router>
 

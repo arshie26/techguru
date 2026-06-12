@@ -1,0 +1,19 @@
+nav{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 100;
+    padding: 14px 32px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#home{
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    gap: 10;
+}

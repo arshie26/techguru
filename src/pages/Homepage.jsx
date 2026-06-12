@@ -642,6 +642,9 @@ function Footer() {
             ["#services", "Packages"],
             ["/audit", "Automation Audit"],
             ["/speaker", "Speaker"],
+            ["/disclaimer", "Disclaimer"],
+            ["/privacy", "Privacy Policy"],
+            ["/termsofservice", "Terms of Service"],
             ["mailto:arshtist@gmail.com", "Contact"],
           ].map(([href, label]) => (
             <a key={label} href={href}
