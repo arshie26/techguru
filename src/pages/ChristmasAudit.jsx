@@ -225,7 +225,7 @@ export default function ChristmasAudit() {
             <span style={{ color: PINE, fontStyle: "italic" }}>when did you last check yours?</span>
           </h1>
           <p className="fade-in delay-2" style={{ fontSize: 18, color: "#555", lineHeight: 1.7, maxWidth: 580, marginBottom: 16 }}>
-            The Automation Audit is a 10-minute self-assessment that shows you exactly where your systems are leaking leads, wasting time, or quietly breaking down — right before your busiest season.
+            The Automation Audit is a 10-minute self-assessment that shows you where your systems might be leaking leads, wasting time, or quietly breaking down — right before your busiest season.
           </p>
           <p className="fade-in delay-2" style={{ fontSize: 15, color: "#888", lineHeight: 1.6, maxWidth: 540, marginBottom: 32 }}>
             No tech knowledge required. Just honest answers about how your business actually runs — and a clear picture of what to fix before the holidays hit.
