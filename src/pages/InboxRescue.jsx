@@ -355,12 +355,6 @@ function Guarantee() {
       <div style={{ maxWidth: 680, margin: "0 auto", textAlign: "center" }}>
         <Reveal>
           <div style={{ fontSize: 48, marginBottom: 20 }}>🛡️</div>
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", color: WHITE, marginBottom: 20, lineHeight: 1.2 }}>
-            My Guarantee
-          </h2>
-          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 17, color: "rgba(255,255,255,0.9)", lineHeight: 1.8, marginBottom: 16 }}>
-            I guarantee you'll be able to update your DKIM records for better email deliverability with the DKIM GPT. If you have any technical difficulties that impede your experience, I will personally help you update your records if you notify me within <strong>7 days of signup.</strong>
-          </p>
           <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginBottom: 32 }}>
             This GPT is for action-driven business owners who are committed to implementation. My goal is to increase your email deliverability so that your marketing actually reaches your customers.
           </p>
