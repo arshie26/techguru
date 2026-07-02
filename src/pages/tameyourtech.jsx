@@ -451,13 +451,13 @@ function OfferDetails() {
           className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-center mb-4"
           style={{ color: "#1C1C1C" }}
         >
-          Pick one area. I'll handle it.
+          Pick your areas. I'll handle it.
         </h2>
         <p
           className="text-center text-lg mb-14 max-w-2xl mx-auto"
           style={{ color: "#6B6B6B", fontFamily: "DM Sans, sans-serif" }}
         >
-          Each month, you choose one task from the list below. No scope creep, no overwhelm. One thing, done well.
+          Each month, you choose one to three small tasks from the list below. No scope creep, no overwhelm. A few small tasks, done well.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
           {whatYouGet.map((item, i) => (
@@ -580,7 +580,7 @@ function Transformation() {
               After Tame Your Tech
             </p>
             {[
-              "One task handled every month — without touching your schedule",
+              "One to three tasks handled every month — without touching your schedule",
               "Offers launched because the tech is no longer the obstacle",
               "Platforms actually doing what you're paying them to do",
               "Energy spent on clients and creativity, not configuration",
@@ -699,7 +699,7 @@ function JoinSection() {
           className="text-lg mb-10"
           style={{ color: "#D6EDE8", fontFamily: "DM Sans, sans-serif" }}
         >
-          One focused tech task handled every month. Email, text, and co-working support included. Month-to-month — no contracts.
+          One to three small, focused tech tasks handled every month. Email, text, and co-working support included. Month-to-month — no contracts.
         </p>
         <a
           href="#"
