@@ -362,6 +362,7 @@ function Guarantee() {
             style={{ display: "inline-block", backgroundColor: WHITE, color: TEAL, fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 16, padding: "16px 44px", borderRadius: 99, textDecoration: "none", boxShadow: "0 8px 28px rgba(0,0,0,0.15)" }}>
             Get Inbox Rescue GPT →
           </a>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginTop: 32 }}>By accessing Inbox Rescue GPT, you agree to receive occasional emails from Tech Guru about related tips, tools, and offers. You can unsubscribe at any time.</p>
         </Reveal>
       </div>
     </section>
@@ -405,6 +406,7 @@ function About() {
               style={{ display: "inline-block", backgroundColor: TEAL, color: WHITE, fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 14, padding: "13px 28px", borderRadius: 99, textDecoration: "none" }}>
               Get Inbox Rescue GPT →
             </a>
+            <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: "rgba(0,0,0,0.75)", lineHeight: 1.7, marginTop: 32 }}>By accessing Inbox Rescue GPT, you agree to receive occasional emails from Tech Guru about related tips, tools, and offers. You can unsubscribe at any time.</p>
           </div>
         </Reveal>
       </div>
@@ -473,9 +475,7 @@ function FinalCTA() {
             style={{ display: "inline-block", backgroundColor: TEAL, color: WHITE, fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 17, padding: "18px 48px", borderRadius: 99, textDecoration: "none", boxShadow: `0 4px 32px ${TEAL}50` }}>
             Get Inbox Rescue GPT →
           </a>
-          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13, color: "rgba(255,255,255,0.35)", marginTop: 16 }}>
-            7-day personal support guarantee · Action-driven business owners only
-          </p>
+          <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginTop: 32 }}>By accessing Inbox Rescue GPT, you agree to receive occasional emails from Tech Guru about related tips, tools, and offers. You can unsubscribe at any time.</p>
         </Reveal>
       </div>
     </section>
