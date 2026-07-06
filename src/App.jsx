@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TameYourTech from './pages/tameyourtech'
+import TameYourTechTripwire from './pages/TameYourTechTripwire_v3'
 import TechWhisperer from './pages/TechWhisperer'
 import TheJoieLab from './pages/thejoielab'
 import Speaker from './pages/SpeakerPage'
@@ -29,10 +30,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path='/tameyourtech' element={<TameYourTech />} />
+          <Route path='/tametripwire' element={<TameYourTechTripwire />} />
           <Route path='/techwhisperer' element={<TechWhisperer />} />
           <Route path="/joielab" element={<TheJoieLab />} />
           <Route path="/inboxrescue" element={<InboxRescue />} />
-          <Route path="./assets/DKIM.pdf"  />
           <Route path="/speaker" element={<Speaker />} />
           <Route path="/salespageworkshop" element={<TechTalk />} />
           <Route path="/dwyworkshop" element={<DWY />} />
