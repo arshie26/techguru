@@ -310,7 +310,7 @@ export default function TameYourTechTripwire() {
             style={{ background: "#FFFFFF", border: "1px solid rgba(61,114,103,0.2)" }}
           >
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#3D7267" }}>
-              Included in your $7 week
+              Included in your $7 Trial
             </p>
             <ul className="space-y-2 text-sm">
               {[
