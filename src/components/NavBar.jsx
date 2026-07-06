@@ -1,5 +1,6 @@
 import React from "react";
 import './NavBar.css'
+import dkim from '../assets/DKIM.pdf'
 import { useState, useEffect } from "react";
 
 const TEAL    = "#3D7267";
@@ -46,6 +47,7 @@ function NavBar() {
             ["/tameyourtech", "Tame Your Tech"],
             ["/techwhisperer", "Tech Whisperer"],
             ["/inboxrescue", "Inbox Rescue GPT"],
+            [dkim, "DKIM"],
             ["#services", "Packages"],
             ["/audit", "Tech Audit"],
             ["/speaker", "Speaker Page"],

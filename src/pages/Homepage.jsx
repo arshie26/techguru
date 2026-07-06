@@ -23,6 +23,7 @@ import mangla from '../assets/mangla.jpg'
 import mangla_logo from '../assets/logo-mangla.jpg'
 import tracy_logo from '../assets/logo-tracy.jpg'
 import arsh from '../assets/arsh-headshot.png'
+import dkim from '../assets/DKIM.pdf'
 
 import Footer from "../components/HomeFooter";
 
@@ -174,6 +175,7 @@ function Nav() {
           ["/tameyourtech", "Tame Your Tech"],
           ["/techwhisperer", "Tech Whisperer"],
           ["/inboxrescue", "Inbox Rescue GPT"],
+          [dkim, "DKIM"],
           ["#services", "Packages"],
           ["/audit", "Tech Audit"],
           ["/speaker", "Speaker Page"],

@@ -9,6 +9,7 @@ import DWY from './pages/TechTalk2'
 import TechAudit from './pages/TechAudit'
 import Homepage from './pages/Homepage'
 import InboxRescue from './pages/InboxRescue'
+import DKIM from './assets/DKIM.pdf'
 import ChristmasAudit from './pages/ChristmasAudit'
 import Disclaimer from './pages/Disclaimer'
 import Privacy from './pages/PrivacyPolicy'
@@ -31,6 +32,7 @@ function App() {
           <Route path='/techwhisperer' element={<TechWhisperer />} />
           <Route path="/joielab" element={<TheJoieLab />} />
           <Route path="/inboxrescue" element={<InboxRescue />} />
+          <Route path="./assets/DKIM.pdf"  />
           <Route path="/speaker" element={<Speaker />} />
           <Route path="/salespageworkshop" element={<TechTalk />} />
           <Route path="/dwyworkshop" element={<DWY />} />
