@@ -64,14 +64,14 @@ const PROBLEMS = [
   { id: "crm", label: "One tag or workflow in my CRM needs fixing" },
   { id: "page", label: "A page or form on my site is glitching" },
   { id: "checkout", label: "My checkout or Stripe link isn't working right" },
-  { id: "AI", label: "My AI workflow is breaking" },
+  { id: "ai", label: "My AI workflow is breaking" },
   { id: "other", label: "Something else entirely -- EXCLUDING SEO AND CYBERSECURITY" },
 ];
 
 const FAQS = [
   {
     q: "What exactly do I get for $7?",
-    a: "One small tech problem, fully diagnosed and fixed by me, within the month. Not a call, not a checklist — the actual thing gets handled.",
+    a: "One small tech problem, fully diagnosed and fixed by me, within 7 days. Not a call, not a checklist — the actual thing gets handled.",
   },
   {
     q: "What if my problem is bigger than one fix?",
@@ -83,7 +83,7 @@ const FAQS = [
   },
   {
     q: "How do we communicate?",
-    a: "We'll get on a call so you can share your problem with me and I can fix it!",
+    a: "Email or a quick async video — whatever's fastest for the problem. No mandatory calls unless it genuinely helps.",
   },
   {
     q: "What platforms do you work with?",
@@ -123,7 +123,7 @@ export default function TameYourTechTripwire() {
             className="hidden sm:block text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1 rounded-full"
             style={{ background: "#3D7267", color: "#F5EDE0" }}
           >
-            1 Problem · $7
+            1 problem · $7
           </span>
         </div>
       </div>
@@ -131,18 +131,28 @@ export default function TameYourTechTripwire() {
       {/* COUNTDOWN BANNER */}
       {!isLoadingTimer && (
         <div
-          className="w-full text-center py-2.5 px-4 text-sm font-semibold tracking-wide"
+          className="w-full text-center py-4 px-4"
           style={{
             background: isExpired ? "#22291F" : "#3D7267",
             color: "#F5EDE0",
           }}
         >
           {isExpired ? (
-            <span>This $7 window has closed — but keep reading, there's still a way in.</span>
+            <span className="text-base sm:text-lg font-semibold tracking-wide">
+              This $7 window has closed — but keep reading, there's still a way in.
+            </span>
           ) : (
-            <span className="inline-flex items-center gap-2">
-              <Clock size={14} />
-              $7 trial price ends in {formatDuration(remainingMs)}
+            <span className="inline-flex items-center gap-3 flex-wrap justify-center">
+              <Clock size={20} />
+              <span className="text-sm sm:text-base font-semibold tracking-wide">
+                $7 trial price ends in
+              </span>
+              <span
+                className="text-2xl sm:text-3xl font-bold tabular-nums tracking-wider"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                {formatDuration(remainingMs)}
+              </span>
             </span>
           )}
         </div>
@@ -154,7 +164,7 @@ export default function TameYourTechTripwire() {
           className="text-xs font-semibold tracking-[0.2em] uppercase mb-4"
           style={{ color: "#3D7267" }}
         >
-          Tame Your Tech · Trial month
+          Tame Your Tech · Trial Month
         </p>
         <h1
           className="text-4xl sm:text-5xl leading-tight mb-5"
@@ -176,7 +186,7 @@ export default function TameYourTechTripwire() {
           <span className="text-2xl font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>
             $7
           </span>
-          <span className="text-sm opacity-80"> · 1 problem, handled</span>
+          <span className="text-sm opacity-80">· 1 problem, handled</span>
         </div>
         <div>
           <a
@@ -202,10 +212,11 @@ export default function TameYourTechTripwire() {
             className="text-2xl sm:text-3xl mb-2 text-center"
             style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
           >
-            Choose your one tech problem
+            Choose your one small tech problem
           </h2>
-          <p className="text-lg opacity-70 text-center mb-7">
-          Here are a few of the problems I see all the time. Don't see your problem here? Don't worry! I can fix it.
+          <p className="text-sm opacity-70 text-center mb-7">
+            Here are a few of the problems I see all the time. Don't see your problem here?
+            Don't worry! I can fix it.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
@@ -246,7 +257,7 @@ export default function TameYourTechTripwire() {
           >
             {selected ? (
               <span>
-                Got it — <strong>{selectedLabel.toLowerCase()}</strong>.
+                Got it — <strong>{selectedLabel.toLowerCase()}</strong>. That's a one-week fix.
                 Let's get started.
               </span>
             ) : (
@@ -310,7 +321,7 @@ export default function TameYourTechTripwire() {
             style={{ background: "#FFFFFF", border: "1px solid rgba(61,114,103,0.2)" }}
           >
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#3D7267" }}>
-              Included in your $7 Trial
+              Included in your $7 week
             </p>
             <ul className="space-y-2 text-sm">
               {[
