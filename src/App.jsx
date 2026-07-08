@@ -7,11 +7,12 @@ import TheJoieLab from './pages/thejoielab'
 import Speaker from './pages/SpeakerPage'
 import TechTalk from './pages/TechTalk'
 import DWY from './pages/TechTalk2'
-import TechAudit from './pages/TechAudit'
+import AutomationAudit from './pages/AutomationAudit'
 import Homepage from './pages/Homepage'
 import InboxRescue from './pages/InboxRescue'
 import DKIM from './assets/DKIM.pdf'
 import ChristmasAudit from './pages/ChristmasAudit'
+import TechAudit from './pages/TechTransformationAudit'
 import Disclaimer from './pages/Disclaimer'
 import Privacy from './pages/PrivacyPolicy'
 import Terms from './pages/TermsOfService'
@@ -19,6 +20,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import TechTransformationAudit from './pages/TechTransformationAudit'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,7 +39,8 @@ function App() {
           <Route path="/speaker" element={<Speaker />} />
           <Route path="/salespageworkshop" element={<TechTalk />} />
           <Route path="/dwyworkshop" element={<DWY />} />
-          <Route path="/audit" element={<TechAudit />} />
+          <Route path="/audit" element={<AutomationAudit />} />
+          <Route path="/techaudit" element={<TechTransformationAudit />} />
           <Route path="/christmasaudit" element={<ChristmasAudit />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/privacy" element={<Privacy />} />
