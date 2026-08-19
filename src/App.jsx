@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import TameYourTech from './pages/tameyourtech'
+import TameYourTech from './pages/TameYourTech2'
 import TameYourTechTripwire from './pages/TameYourTechTripwire_v3'
 import TechWhisperer from './pages/TechWhisperer'
 import TheJoieLab from './pages/thejoielab'
