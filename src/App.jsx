@@ -10,6 +10,7 @@ import DWY from './pages/TechTalk2'
 import AutomationAudit from './pages/AutomationAudit'
 import Homepage from './pages/Homepage'
 import InboxRescue from './pages/InboxRescue'
+import TechStackAudit from './pages/TechStackAudit'
 import DKIM from './assets/DKIM.pdf'
 import ChristmasAudit from './pages/ChristmasAudit'
 import TechAudit from './pages/TechTransformationAudit'
@@ -41,6 +42,7 @@ function App() {
           <Route path="/dwyworkshop" element={<DWY />} />
           <Route path="/audit" element={<AutomationAudit />} />
           <Route path="/techaudit" element={<TechTransformationAudit />} />
+          <Route path="/techstackaudit" element={<TechStackAudit />} />
           <Route path="/christmasaudit" element={<ChristmasAudit />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/privacy" element={<Privacy />} />
