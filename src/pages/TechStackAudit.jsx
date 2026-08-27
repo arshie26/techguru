@@ -165,7 +165,7 @@ export default function TechStackAudit() {
           <span style={{ color: "#3D7267", fontStyle: "italic" }}>bloated tech stack</span>, live.
         </h1>
         <p className="text-base sm:text-lg opacity-80 max-w-xl mx-auto mb-4 leading-relaxed">
-          Not a questionnaire. Not a generic checklist. I get on a call, pull up your actual platforms with you, and show you exactly what's underused, overlapping, or quietly costing you money.
+          Not a questionnaire. Not a generic checklist. I get on a call, pull up your actual platforms with you, and investigate what's underused, overlapping, or quietly costing you money.
         </p>
         <p className="text-sm opacity-60 max-w-md mx-auto mb-8 leading-relaxed">
           You'll leave with a clear picture of what's working, what's broken, and what to do first — plus a written breakdown after the call.
