@@ -177,6 +177,7 @@ function Nav() {
           ["/inboxrescue", "Inbox Rescue GPT"],
           [dkim, "DKIM"],
           ["#services", "Packages"],
+          ["/techstackaudit", "Tech Stack Audit"],
           ["/audit", "Tech Audit"],
           ["/speaker", "Speaker Page"],
           ["/salespageworkshop", "Workshop"],
