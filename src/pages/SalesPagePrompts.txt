@@ -1,0 +1,25 @@
+PROMPT 1:
+I am building a sales page on [platform].
+
+I need to get clear on my offer to build my sales page. Ask me these questions ONE AT A TIME and wait for my answer before moving on. 
+1. What is the name of your offer? 
+2. What does someone get when they buy it? (Be specific — format, deliverables, how long, how it's delivered) 
+3. What are the price points? 
+4. Who is this for? Describe the specific person — what they do, what stage they're at in their business or life. 
+5. What is the #1 problem your offer solves? 
+6. What does life look like BEFORE someone buys — what are they struggling with, losing, or missing out on? 
+7. What does life look like AFTER — what changes, what gets easier, what becomes possible? 
+8. What result have past clients or customers gotten? Give me real numbers, real outcomes, and testimonials if you have them. 
+9. What is the most common reason someone hesitates before buying? 
+
+PROMPT 2:
+Refine all my responses please
+
+PROMPT 3:
+I want proper branding and then instructions to build this page on [PLATFORM]
+
+PROMPT 4:
+Keep the design simple but on brand for me so I can bring it to my platform
+
+PROMPT 5:
+I'm not tech savvy. Please take into account as you give me these instructions and give me a simple design that is very easy to bring to my platform

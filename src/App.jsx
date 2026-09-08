@@ -17,6 +17,7 @@ import TechAudit from './pages/TechTransformationAudit'
 import Disclaimer from './pages/Disclaimer'
 import Privacy from './pages/PrivacyPolicy'
 import Terms from './pages/TermsOfService'
+import AIPrompts from './pages/SalesPagePrompts.txt'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -42,6 +43,7 @@ function App() {
           <Route path="/dwyworkshop" element={<DWY />} />
           <Route path="/audit" element={<AutomationAudit />} />
           <Route path="/techaudit" element={<TechTransformationAudit />} />
+          <Route path="/aiprompts" element={<AIPrompts />} />
           <Route path="/techstackaudit" element={<TechStackAudit />} />
           <Route path="/christmasaudit" element={<ChristmasAudit />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
