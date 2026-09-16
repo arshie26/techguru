@@ -583,52 +583,7 @@ function SignupSection() {
               <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15, color: MID }}>Your mail client should have opened. I'll be in touch with the details soon.</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit}>
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                <input
-                  type="text" value={name} onChange={e => setName(e.target.value)}
-                  placeholder="Your first name"
-                  required
-                  style={{
-                    width: "100%", padding: "14px 18px", borderRadius: 10,
-                    border: `1px solid ${TAN_LT}`, backgroundColor: WHITE,
-                    fontFamily: "DM Sans, sans-serif", fontSize: 15, color: DARK,
-                    outline: "none", transition: "border-color 0.2s", boxSizing: "border-box"
-                  }}
-                  onFocus={e => e.currentTarget.style.borderColor = TEAL}
-                  onBlur={e => e.currentTarget.style.borderColor = TAN_LT}
-                />
-                <input
-                  type="email" value={email} onChange={e => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  required
-                  style={{
-                    width: "100%", padding: "14px 18px", borderRadius: 10,
-                    border: `1px solid ${TAN_LT}`, backgroundColor: WHITE,
-                    fontFamily: "DM Sans, sans-serif", fontSize: 15, color: DARK,
-                    outline: "none", transition: "border-color 0.2s", boxSizing: "border-box"
-                  }}
-                  onFocus={e => e.currentTarget.style.borderColor = TEAL}
-                  onBlur={e => e.currentTarget.style.borderColor = TAN_LT}
-                />
-                <button type="submit"
-                  style={{
-                    backgroundColor: TEAL, color: WHITE,
-                    fontFamily: "DM Sans, sans-serif", fontWeight: 700, fontSize: 16,
-                    padding: "16px", borderRadius: 99, border: "none",
-                    cursor: "pointer", boxShadow: `0 4px 24px ${TEAL}40`,
-                    transition: "opacity 0.2s"
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}
-                  onMouseLeave={e => e.currentTarget.style.opacity = "1"}
-                >
-                  Save My Spot — It's Free
-                </button>
-              </div>
-              <p style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12, color: TAN, marginTop: 14 }}>
-                No spam. Just the date, time, and link when it's ready.
-              </p>
-            </form>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2z8E8nWU5n_NqMXvzWHe8Tx6zbT7HwqhJOssx-wcE9z5sOg/viewform?embedded=true" style={{ width: "100%", height: "60vh" }} frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           )}
         </Reveal>
       </div>
